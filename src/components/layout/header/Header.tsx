@@ -1,17 +1,22 @@
 import { Nav } from "../nav/Nav";
 import styles from "./header.module.css"
 import { FaShoppingCart } from "react-icons/fa";
-
+import { PiFlowerLotusFill } from "react-icons/pi";
 
 
 export function Header() {
     return (
         <header className={styles.wrapper}>
-            <div>
-                logo | Online Shop 
+            <div className={styles.logo}>
+                <div className={styles.logoIcon}>
+                    <PiFlowerLotusFill size={30} />
+                </div>
+                <div>
+                     Online Shop
+                </div>  
             </div>
             <Nav />
-            <div>
+            <div className={styles.cartIcon}>
                 <FaShoppingCart size={26} />
             </div>
         </header>
