@@ -1,0 +1,12 @@
+.wrapper {
+    width: 95%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 1.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #C6D8C0;
+    border-bottom: 1px solid #ccc; /* valgfritt */
+    color: #2D4832;
+  }

@@ -1,0 +1,12 @@
+.navBar {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navList a {
+    text-decoration: none;
+    color: #2D4832;
+}
