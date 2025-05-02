@@ -1,5 +1,8 @@
 import { Nav } from "../nav/Nav";
 import styles from "./header.module.css"
+import { FaShoppingCart } from "react-icons/fa";
+
+
 
 export function Header() {
     return (
@@ -8,7 +11,9 @@ export function Header() {
                 logo | Online Shop 
             </div>
             <Nav />
-            <div>shopping cart icon</div>
+            <div>
+                <FaShoppingCart size={26} />
+            </div>
         </header>
     )
 }

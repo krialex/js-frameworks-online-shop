@@ -10,3 +10,7 @@
     text-decoration: none;
     color: #2D4832;
 }
+
+.navList a:hover {
+    color: #E8F0E3;
+}
