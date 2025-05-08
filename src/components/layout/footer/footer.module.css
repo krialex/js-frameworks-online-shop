@@ -1,0 +1,12 @@
+.footerSection {
+    background-color: #E1E1DC;
+    color: #1A1A1A;
+    padding: 1rem;
+}
+
+.footerInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}

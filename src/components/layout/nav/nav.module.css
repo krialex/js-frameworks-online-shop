@@ -6,11 +6,15 @@
     margin: 0;
 }
 
-.navList a {
+.navList a, .cartIcon {
     text-decoration: none;
     color: #2D4832;
 }
 
 .navList a:hover {
     color: #E8F0E3;
+}
+
+.cartNumber {
+    color: #F47C3C;
 }
