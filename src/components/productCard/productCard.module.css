@@ -1,5 +1,4 @@
 .productCard {
-    /*max-width: 300px;*/
     border: 1px solid #E1E1DC;
     border-radius: 12px;
     background-color: #FAF9F5;
@@ -25,10 +24,11 @@
 }
 
 .productCard img {
-    height: 180px;
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
+    height: auto;
+    display: block;
 }
 
 .productCard p {
@@ -50,5 +50,24 @@
   
   .productCard button:hover {
     background-color: #A0C199;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.percent {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    background-color: #F47C3C;
+    color: white;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 4px;
+    z-index: 10;
 }
 

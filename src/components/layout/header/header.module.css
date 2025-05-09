@@ -16,7 +16,7 @@
 }
 
 .logoTitle {
-    font-family: "Plaster", system-ui;
+    font-family: var(--logo-font);
     font-weight: 400;
     font-style: normal;   
     font-size: 1.6rem;

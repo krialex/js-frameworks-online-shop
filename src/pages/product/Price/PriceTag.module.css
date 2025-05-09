@@ -1,0 +1,29 @@
+.priceTag {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.priceTag .originalPrice {
+    text-decoration: line-through;
+    color: #808080;
+}
+
+.discountedPrice, .fullPrice {
+    font-weight: bold;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.priceTag .percent {
+    background-color: #F47C3C;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
