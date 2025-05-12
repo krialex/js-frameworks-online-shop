@@ -26,9 +26,12 @@
 .cartSummary {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
     padding: 40px 5px;
     margin: 20px auto;
+}
+
+.cartSummary p {
+    font-size: 1.3rem;
 }
 
 .productInCart img {

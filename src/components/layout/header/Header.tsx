@@ -14,7 +14,7 @@ export function Header() {
                 <div className={styles.logoTitle}>Online Shop</div> 
             </div>
             </Link> 
-            
+
             <Nav />
         </header>
     )

@@ -33,17 +33,19 @@
     font-weight: bold;
   } 
 
-  .addToCart {
-    background-color: #F47C3C;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
+.addToCart {
+  background-color: #F47C3C;
+  max-width: 250px;
+  margin: 5px auto;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
 
 .addToCart:hover {
     background-color: #e96b2a;
@@ -74,6 +76,7 @@
     grid-template-rows: auto;
     gap: 24px;
     padding: 16px;
+    max-width: 500px;
   }
 
   .imageSection img {
