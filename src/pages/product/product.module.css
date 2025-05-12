@@ -68,3 +68,25 @@
   z-index: 10;
 }
 
+@media (max-width: 768px) {
+  .productPage {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 24px;
+    padding: 16px;
+  }
+
+  .imageSection img {
+    max-height: 300px;
+  }
+
+  .infoSection h1 {
+    font-size: 1.5rem;
+  }
+
+  .addToCart {
+    font-size: 0.95rem;
+    padding: 10px 16px;
+  }
+}
+

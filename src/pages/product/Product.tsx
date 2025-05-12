@@ -5,6 +5,7 @@ import { Product as ProductType } from "../../common/types";
 import { Reviews } from "./Reviews/Reviews";
 import styles from "./product.module.css";
 import { PriceTag } from "./Price/PriceTag";
+import { useCartStore } from "../../components/addToCart/cartStore";
 
 
 export function Product() {
@@ -37,7 +38,7 @@ export function Product() {
                 <h1>{product.title}</h1>
                 <p className={styles.description}>{product.description}</p>
                 <PriceTag price={product.price} discountedPrice={product.discountedPrice} />
-                <button className={styles.addToCart}>Add to cart</button>
+                <button className={styles.addToCart} onClick={() => useCartStore.getState().addToCart(product)}>Add to cart</button>
             </div>
         </div>
         <Reviews reviews={product.reviews} />
