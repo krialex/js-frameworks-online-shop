@@ -45,5 +45,13 @@ npm run dev
 Deployed on Netlify
 
 ```
-
+https://js-fw-ecom-store.netlify.app/
 ```
+
+## Contact
+
+Here is my contact information if you want to contact me:
+
+[LinkedIn](https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin "KristineAlexandersen profile")
+
+<krigulland@gmail.com>
