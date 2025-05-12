@@ -6,11 +6,13 @@ import { Reviews } from "./Reviews/Reviews";
 import styles from "./product.module.css";
 import { PriceTag } from "./Price/PriceTag";
 import { useCartStore } from "../../components/addToCart/cartStore";
+import { toast } from 'react-toastify';
 
 
 export function Product() {
     const { id } = useParams();
     const [product, setProduct] = useState<ProductType | null>(null);
+    const addToCart = useCartStore((state) => state.addToCart);
 
     useEffect(() => {
         async function fetchProduct() {
@@ -20,6 +22,12 @@ export function Product() {
         }
         fetchProduct();
     }, [id]);
+
+    const handleAddToCart = () => {
+        if (!product) return;
+        addToCart(product);
+        toast.success("Your have added a product to the cart!");
+    };
 
     if (!product) return <div>Loading product...</div>;
 
@@ -38,7 +46,7 @@ export function Product() {
                 <h1>{product.title}</h1>
                 <p className={styles.description}>{product.description}</p>
                 <PriceTag price={product.price} discountedPrice={product.discountedPrice} />
-                <button className={styles.addToCart} onClick={() => useCartStore.getState().addToCart(product)}>Add to cart</button>
+                <button className={styles.addToCart} onClick={handleAddToCart}>Add to cart</button>
             </div>
         </div>
         <Reviews reviews={product.reviews} />

@@ -9,10 +9,13 @@ import { Product } from "./pages/product/Product";
 import { Checkout } from "./pages/checkout/Checkout";
 import { CheckoutSuccess } from "./pages/checkoutSuccess/CheckoutSuccess";
 import { Contact } from "./pages/contact/Contact";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
-    <Routes>
+    <>
+      <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="contact" element={<Contact />} />
@@ -21,7 +24,9 @@ function App() {
         <Route path="success" element={<CheckoutSuccess />} />
       </Route>
     </Routes>
-  )
+    <ToastContainer position="bottom-right" autoClose={2000} />
+    </>
+  );
 }
 
 export default App
