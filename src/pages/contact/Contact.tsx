@@ -3,6 +3,8 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { toast } from 'react-toastify';
+import { TbMailFast } from "react-icons/tb";
+import styles from './Contact.module.css';
 
 const schema = yup
     .object({
@@ -32,7 +34,7 @@ export function Contact() {
         formState: { errors },
     } = useForm({ resolver: yupResolver(schema) });
 
-    function onSubmit(data) {
+    function onSubmit(data: any) {
         console.log(data);
         toast.success("Your message has been sent");
     }
@@ -40,32 +42,41 @@ export function Contact() {
     return (
         <>
         <h1>Contact us</h1>
-        <form onSubmit={handleSubmit(onSubmit)}>
-            <label htmlFor='fullName'>Full name</label>
-            <input 
-                id='fullName' 
-                placeholder='full name' 
-                {...register('fullName')} />
-            <p>{errors.fullName?.message}</p>
-            <label htmlFor='subject'>Subject</label>
-            <input 
-                id='subject' 
-                placeholder='subject' 
-                {...register('subject')} />
-            <p>{errors.subject?.message}</p>
-            <label htmlFor='email'>Email</label>
-            <input 
-                id='email' 
-                placeholder='email' 
-                {...register('email')} />
-            <p>{errors.email?.message}</p>
-            <label htmlFor='body'>Message</label>
-            <input 
-                id='body' 
-                placeholder='message' 
-                {...register('body')} />
-            <p>{errors.body?.message}</p>
-            <input type="submit" />
+        <form onSubmit={handleSubmit(onSubmit)} className={styles.contactForm}>
+            <div className={styles.inputField}>
+                <label htmlFor='fullName'>Full name</label>
+                <input 
+                    id='fullName' 
+                    placeholder='full name' 
+                    {...register('fullName')} />
+                <p>{errors.fullName?.message}</p>
+            </div>
+            <div className={styles.inputField}>
+                <label htmlFor='subject'>Subject</label>
+                <input 
+                    id='subject' 
+                    placeholder='subject' 
+                    {...register('subject')} />
+                <p>{errors.subject?.message}</p>
+            </div>
+            <div className={styles.inputField}>
+                <label htmlFor='email'>Email</label>
+                <input 
+                    id='email' 
+                    placeholder='email' 
+                    {...register('email')} />
+                <p>{errors.email?.message}</p>
+            </div>
+            <div className={styles.inputField}>
+                <label htmlFor='body'>Message</label>
+                <textarea 
+                    id='body' 
+                    rows={5}
+                    placeholder='message' 
+                    {...register('body')} />
+                <p>{errors.body?.message}</p>
+            </div>
+            <button type="submit" className={styles.submitBtn}>Submit<TbMailFast /></button>
         </form>
         </>
     )

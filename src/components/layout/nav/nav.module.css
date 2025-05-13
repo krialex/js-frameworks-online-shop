@@ -18,3 +18,7 @@
 .cartNumber {
     color: #F47C3C;
 }
+
+@media (max-width: 620px) {
+    
+}
