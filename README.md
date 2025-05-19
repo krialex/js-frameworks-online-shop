@@ -2,15 +2,40 @@
 
 ## Description
 
-This is a school assignment where I was tasked with creating an eCommerce store using React. The requirements were to fetch products from an API and display them on the homepage. They were to be shown in product cards, each with a button that takes the user to the individual product based on its ID. In addition, the user should be able to use a search field to search for products by their title. On the product page, I have retrieved all the information from the API and display both the original price, the discounted price, and a review section where the product shows reviews from other customers who have purchased it.
+This is a school assignment where I was tasked with creating an eCommerce store using **React**. I chose to also use **Vite**. The requirements included:
+
+- Fetch products from an API and display them on the homepage in product cards.
+- Allow users to click on a product to view detailed information on a separate page.
+- Implement a search functionality to filter products by their title.
+- Display detailed product information, including original and discounted prices.
+- Show customer reviews for each product.
+
+Additional features I implemented include:
+
+- A cart system is built using Zustand, and the cart icon shows the number of items.
+- Toast notifications when products are added to the cart.
+- From the product page, items can be added to the cart, and on the checkout page the user can see a summary and complete the order.
+- On successful checkout, a success message is shown and the cart is cleared.
+- The Contact page includes a validated form (name, subject, email, message) that logs the data to the console once all inputs are valid.
+- Responsive design using CSS.
+- Routing with React Router.
 
 ## Built with
 
-- Typescript
-
-- CSS
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Zustand](https://zustand-demo.pmnd.rs/)
+- [React Router DOM](https://reactrouter.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [CSS Modules](https://github.com/css-modules/css-modules)
 
 ## Getting started
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
 
 ### Installing
 
@@ -20,14 +45,10 @@ This is a school assignment where I was tasked with creating an eCommerce store 
 git clone https://github.com/krialex/js-frameworks-online-shop
 ```
 
-2. Install the dependencies
+2. Navigate into the project directory and install dependencies:
 
 ```
-NodeJs
-```
-
-```
-NPM
+cd js-frameworks-online-shop
 ```
 
 ```

@@ -15,13 +15,10 @@ export function SearchBar({ products, onFilter }: SearchBarProps) {
         const value = e.target.value;
         setQuery(value);
 
-        console.log("dette er verdien: ", value);
-
     const filtered = products.filter((product) =>
         product.title.toLowerCase().includes(value.toLowerCase())
     );
     onFilter(filtered);
-
     };
 
     return (

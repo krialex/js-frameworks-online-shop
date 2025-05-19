@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
+import { CartIcon } from '../../addToCart/CartIcon';
 import styles from './nav.module.css';
-import { FaShoppingCart } from "react-icons/fa";
-import { useCartStore } from '../../addToCart/cartStore';
+//import { FaShoppingCart } from "react-icons/fa";
+//import { useCartStore } from '../../addToCart/cartStore';
 
 
 export function Nav() {
-  const cart = useCartStore((state) => state.cart);
+  //const cart = useCartStore((state) => state.cart);
   
     return (
       <nav>
@@ -17,19 +18,22 @@ export function Nav() {
             <Link to="/contact">Contact us</Link>
           </li>
           <li>
-            <Link to="/checkout">
+            <CartIcon />
+          </li>
+        </ul>
+      </nav>
+    );
+  }
+  
+
+  /*            <Link to="/checkout">
               <div className={styles.cartIcon}>
                   <FaShoppingCart size={26} />
                   <span className={styles.cartNumber}>
                   {cart.reduce((sum, item) => sum + item.quantity, 0)}
                   </span>
               </div>
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    )
-  }
+            </Link>*/
 
 
 

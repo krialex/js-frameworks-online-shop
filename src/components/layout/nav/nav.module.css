@@ -6,7 +6,7 @@
     margin: 0;
 }
 
-.navList a, .cartIcon {
+.navList a {
     text-decoration: none;
     color: #2D4832;
 }
@@ -15,10 +15,7 @@
     color: #E8F0E3;
 }
 
-.cartNumber {
-    color: #F47C3C;
-}
 
 @media (max-width: 620px) {
-    
+
 }
