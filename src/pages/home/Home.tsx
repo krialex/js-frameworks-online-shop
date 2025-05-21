@@ -26,7 +26,7 @@ export function Home() {
         }
     }, [products]);
     
-    if (isLoading) return <div className={styles.spinner}></div>;
+    if (isLoading) return <div className={styles.spinner} aria-label="Loading spinner"></div>;
     if (isError) return <div>Something went wrong. Please try again later.</div>;
         
     console.log('This is data: ', products);

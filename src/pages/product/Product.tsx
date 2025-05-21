@@ -41,7 +41,7 @@ export function Product() {
         toast.success("Your have added a product to the cart!");
     };
 
-    if (!product) return <div className={styles.spinner}></div>;
+    if (!product) return <div className={styles.spinner} aria-label="Loading spinner"></div>;
 
     return (
         <>
