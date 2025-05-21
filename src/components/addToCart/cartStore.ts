@@ -13,6 +13,22 @@ interface CartState {
   clearCart: () => void;
 }
 
+/**
+ * useCartStore
+ * 
+ * A Zustand store for managing the shopping cart state.
+ * 
+ * Includes logic for:
+ * - Adding products to the cart
+ * - Increasing quantity if the product already exists
+ * - Removing a product from the cart
+ * - Clearing the entire cart
+ * 
+ * Cart state is persisted in localStorage under the key `cart-storage`.
+ * 
+ * @returns {Object} Store API with `cart`, `addToCart`, `removeFromCart`, and `clearCart`.
+ */
+
 export const useCartStore = create<CartState>()(
     persist(
         (set) => ({

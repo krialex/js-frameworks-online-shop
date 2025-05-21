@@ -8,7 +8,19 @@ import { PriceTag } from "./Price/PriceTag";
 import { useCartStore } from "../../components/addToCart/cartStore";
 import { toast } from 'react-toastify';
 
-
+/**
+ * Product component
+ * 
+ * Fetches and displays the details of a single product based on the route param `id`.
+ * Includes:
+ * - Product title, image, description
+ * - Price and discount displayed using `PriceTag`
+ * - Reviews section
+ * - Add to cart functionality (with Zustand store)
+ * - Toast feedback when adding to cart
+ * 
+ * @component
+ */
 export function Product() {
     const { id } = useParams();
     const [product, setProduct] = useState<ProductType | null>(null);
@@ -29,7 +41,7 @@ export function Product() {
         toast.success("Your have added a product to the cart!");
     };
 
-    if (!product) return <div>Loading product...</div>;
+    if (!product) return <div className={styles.spinner}></div>;
 
     return (
         <>

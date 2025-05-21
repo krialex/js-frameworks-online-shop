@@ -1,6 +1,6 @@
 :root {
   --logo-font: "Plaster", system-ui;
-  --body-font: "Josefin Sans", sans-serif;
+  --body-font: system-ui, "Avenir", "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 

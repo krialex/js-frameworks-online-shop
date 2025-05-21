@@ -1,5 +1,14 @@
 import styles from "./PriceTag.module.css";
 
+/**
+ * PriceTag component
+ * 
+ * Displays a product's price, and optionally a discounted price.
+ * If a discounted price is lower than the original price, the original price will
+ * be styled as the "old" price and shown alongside the discounted one.
+ * 
+ */
+
 interface PriceTagProps {
   price: number;
   discountedPrice: number;

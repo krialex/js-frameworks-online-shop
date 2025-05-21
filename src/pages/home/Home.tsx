@@ -5,6 +5,17 @@ import { Product } from "../../common/types";
 import { SearchBar } from "../../components/searchBar/SearchBar";
 import styles from "./home.module.css";
 
+/**
+ * Home component
+ * 
+ * Fetches and displays all available products.
+ * Includes a search bar that filters the products based on their title.
+ * Displays each product inside a `ProductCard`.
+ * 
+ * Uses `useApi` for fetching product data from the API.
+ * 
+ * @component
+ */
 export function Home() {
     const { posts: products, isLoading, isError } = useApi();
     const [fileredProducts, setFilteredProducts] = useState<Product[]>([]);
@@ -15,10 +26,10 @@ export function Home() {
         }
     }, [products]);
     
-    if (isLoading) return <div>Loading</div>;
-    if (isError) return <div>error message</div>;
+    if (isLoading) return <div className={styles.spinner}></div>;
+    if (isError) return <div>Something went wrong. Please try again later.</div>;
         
-    console.log('Dette er data: ', products);
+    console.log('This is data: ', products);
     return (
         <div>
             <h1>Browse our products</h1>

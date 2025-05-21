@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import { BASE_API_URL, ALL_POSTS } from './url';
+import { Product } from './types';
 
 const apiUrl = BASE_API_URL + ALL_POSTS;
 
 export function useApi() {
-    const [posts, setPosts] = useState([]);
+    const [posts, setPosts] = useState<Product[]>([]);
     const [isLoading, setIsLoading] = useState(false);
     const [isError, setIsError] = useState(false);
 
