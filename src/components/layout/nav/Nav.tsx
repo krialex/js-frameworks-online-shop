@@ -1,39 +1,44 @@
 import { Link } from 'react-router-dom';
 import { CartIcon } from '../../addToCart/CartIcon';
 import styles from './nav.module.css';
-//import { FaShoppingCart } from "react-icons/fa";
-//import { useCartStore } from '../../addToCart/cartStore';
-
+import { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 export function Nav() {
-  //const cart = useCartStore((state) => state.cart);
-  
-    return (
-      <nav>
-        <ul className={styles.navBar}>
-          <li className={styles.navList}>
-            <Link to="/">Home</Link>
-          </li>
-          <li className={styles.navList}>
-            <Link to="/contact">Contact us</Link>
-          </li>
-          <li>
-            <CartIcon />
-          </li>
-        </ul>
-      </nav>
-    );
-  }
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <>
+    <nav className={styles.nav}>
+      <div className={styles.navHeader}>
+        <button
+          className={styles.hamburger}
+          onClick={() => setMenuOpen((prev) => !prev)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
+        </button>
+      </div>
+
+      <ul className={`${styles.navBar} ${menuOpen ? styles.showMenu : ''}`}>
+        <li className={styles.navList}>
+          <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+        </li>
+        <li className={styles.navList}>
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact us</Link>
+        </li>
+      </ul>
+
+    </nav>
+          <div className={styles.cartItem}>
+          <CartIcon />
+      </div>
+      </>
+  );
+}
+
   
 
-  /*            <Link to="/checkout">
-              <div className={styles.cartIcon}>
-                  <FaShoppingCart size={26} />
-                  <span className={styles.cartNumber}>
-                  {cart.reduce((sum, item) => sum + item.quantity, 0)}
-                  </span>
-              </div>
-            </Link>*/
 
 
 
