@@ -10,6 +10,7 @@ export function ReviewCard({ review }: ReviewCardProps) {
         <div className={styles.reviewCard}>
             <strong>{review.username}</strong> rated {review.rating}/5
             <p>{review.description}</p>
+            <br></br>
         </div>
     );
 }

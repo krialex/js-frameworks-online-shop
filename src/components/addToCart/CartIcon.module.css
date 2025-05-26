@@ -1,8 +1,8 @@
 .cartIcon {
     text-decoration: none;
-    color: #2D4832;
+    color: var(--main-color);
 }
 
 .cartNumber {
-    color: #F47C3C;
+    color: var(--contrast-color);
 }

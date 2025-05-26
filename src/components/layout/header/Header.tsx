@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Nav } from "../nav/Nav";
 import styles from "./header.module.css";
 import { PiFlowerLotusFill } from "react-icons/pi";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Header() {
     return (
@@ -16,6 +17,7 @@ export function Header() {
             </Link> 
 
             <Nav />
+            <ThemeToggle />
         </header>
     )
 }

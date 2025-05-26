@@ -34,10 +34,10 @@
   } 
 
 .addToCart {
-  background-color: #F47C3C;
+  background-color: var(--contrast-color);
   max-width: 250px;
   margin: 5px auto;
-  color: white;
+  color: var(--white-details);
   border: none;
   padding: 12px 20px;
   border-radius: 8px;
@@ -61,8 +61,8 @@
   position: absolute;
   top: 0.5rem;
   left: 0.5rem;
-  background-color: #F47C3C;
-  color: white;
+  background-color: var(--contrast-color);
+  color: var(--white-details);
   padding: 0.4rem 0.6rem;
   font-size: 0.8rem;
   font-weight: bold;
@@ -76,7 +76,7 @@
   margin: 20px auto;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: #F47C3C;
+  background: var(--contrast-color);
   --_m: 
     conic-gradient(#0000 10%,#000),
     linear-gradient(#000 0 0) content-box;

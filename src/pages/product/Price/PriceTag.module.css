@@ -20,8 +20,8 @@
 }
 
 .priceTag .percent {
-    background-color: #F47C3C;
-    color: white;
+    background-color: var(--contrast-color);
+    color: var(--white-details);
     padding: 0.3rem 0.6rem;
     font-size: 0.8rem;
     font-weight: bold;

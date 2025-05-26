@@ -2,7 +2,7 @@
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #FAF9F5;
+    background-color: var(--product-card-bg-color);
     border-radius: 12px;
 } 
 
@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: 120px 1fr 1fr 1fr;
     align-items: center;
-    background-color: #FFF;
+    background-color: var(--white-details);
     padding: 16px;
     border-radius: 12px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.08);
@@ -43,17 +43,17 @@
 
 .title {
     font-weight: 600;
-    color: #2D4832;
+    color: var(--main-color);
 }
 
 .price {
     font-weight: bold;
-    color: #2D4832;
+    color: var(--main-color);
 }
 
 .removeBtn {
-    background-color: #eee;
-    color: #2D4832;
+    background-color: var(--remove-btn-color);
+    color: var(--main-color);
     border: none;
     padding: 8px 12px;
     border-radius: 6px;
@@ -63,8 +63,8 @@
 }
 
 .checkOutBtn, .clearCartBtn {
-    background-color: #F47C3C;
-    color: white;
+    background-color: var(--contrast-color);
+    color: var(--white-details);
     border: none;
     padding: 12px 20px;
     margin: 5px 10px;
@@ -77,8 +77,8 @@
 }
 
 .clearCartBtn {
-    background-color: #eee;
-    color: #2D4832;
+    background-color: var(--remove-btn-color);
+    color: var(--main-color);
 }
 
 .checkOutBtn:hover {

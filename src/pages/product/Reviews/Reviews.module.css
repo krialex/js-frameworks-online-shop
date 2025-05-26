@@ -1,14 +1,14 @@
 .productReview {
     display: flex;
     flex-direction: column;
-    background-color: #FFF;
+    background-color: var(--white-details);
     max-width: 50%;
     margin: 65px auto;
     border-radius: 6px;
 }
 
 .productReview hr {
-    border: 1px solid #2D4832;
+    border: 1px solid var(--main-color);
     width: 84%;
 }
 

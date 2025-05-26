@@ -1,6 +1,6 @@
 .footerSection {
-    background-color: #E1E1DC;
-    color: #1A1A1A;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
     padding: 1rem;
     width: 100%;
 }

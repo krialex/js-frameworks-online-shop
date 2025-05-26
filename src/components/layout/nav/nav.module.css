@@ -8,13 +8,12 @@
 
 .navList a {
     text-decoration: none;
-    color: #2D4832;
+    color: var(--main-color);
 }
 
 .navList a:hover {
-    color: #E8F0E3;
+    color: var(--nav-hover-color);
 }
-
 
 @media (max-width: 620px) {
 

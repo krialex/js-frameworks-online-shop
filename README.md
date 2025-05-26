@@ -61,6 +61,14 @@ npm install
 npm run dev
 ```
 
+### Tests
+
+For testing I installed [Vitest](https://vitest.dev/). To run test:
+
+```
+npm run test
+```
+
 ## Link to website
 
 Deployed on Netlify

@@ -1,17 +1,55 @@
 :root {
   --logo-font: "Plaster", system-ui;
   --body-font: system-ui, "Avenir", "Helvetica", "Arial", sans-serif;
+  --main-color: #2D4832;
+  --contrast-color: #F47C3C;
+  --bg-color: #FAF9F5;
+  --footer-bg-color: #E1E1DC;
+  --footer-text-color: #1A1A1A;
+  --header-bg-color: #C6D8C0;
+  --nav-hover-color: #E8F0E3;
+  --product-card-bg-color: #FAF9F5;
+  --white-details: #FFF;
+  --remove-btn-color: #eee;
+  --box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  --box-shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --search-color-text: #333;
+  --search-bg-color: #FFF;
+
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #2D4832;
-  background-color: #FAF9F5;
+  color: var(--main-color);
+  background-color: var(--bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body.dark {
+  --main-color: #E0E8DD;
+  --contrast-color: #F47C3C; 
+  --bg-color: #1A1A1A;
+
+  --footer-bg-color: #2A2A2A;
+  --footer-text-color: #EDEDED;
+  --header-bg-color: #2F3B2D; 
+  --nav-hover-color: #3D4A3A; 
+  --product-card-bg-color: #2C2C2C;
+  --white-details: #1A1A1A; 
+  --remove-btn-color: #444444;
+  --box-shadow: 0 1px 4px rgba(255, 255, 255, 0.05);
+  --box-shadow-hover: 0 4px 12px rgba(255, 255, 255, 0.15);
+  --search-color-text: #696969;
+  --search-bg-color: #eee;
+
+  color-scheme: dark;
+
+  color: var(--main-color);
+  background-color: var(--bg-color);
 }
 
 

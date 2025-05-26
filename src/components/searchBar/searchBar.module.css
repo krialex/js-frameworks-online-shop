@@ -1,13 +1,13 @@
 .searchBarWrapper {
     display: flex;
-    background-color: #FFF;
+    background-color: var(--search-bg-color);
     max-width: fit-content;
     margin: 5px auto;
     border: none;
     padding: 5px;
     border-radius: 6px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-    color: #2D4832;
+    box-shadow: var(--box-shadow);
+    color: var(--search-color-text);
 }
 
 .searchInput {
@@ -15,11 +15,12 @@
     font-size: 1rem;
     outline: none;
     transition: box-shadow 0.2s;
-    color: #333;
+    background-color: var(--search-bg-color);
+    color: var(--search-color-text);
 }
 
 .searchBarWrapper:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    box-shadow: var(--box-shadow-hover); 
     transform: translateY(-1px); 
     transition: box-shadow 0.2s ease, transform 0.2s ease;
     cursor: text;

@@ -1,11 +1,11 @@
 .successContainer {
     margin: 50px auto;
-    border: 2px solid #2D4832;
+    border: 2px solid var(--main-color);
     max-width: fit-content;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-    background-color: #fef9f9;
+    background-color: var(--remove-btn-color);
 }
 
 .successContainer p {
@@ -17,8 +17,8 @@
 }
 
 .successBtn {
-    background-color: #F47C3C;
-    color: white;
+    background-color: var(--contrast-color);
+    color: var(--white-details);
     border: none;
     padding: 12px 20px;
     margin: 5px 10px;
