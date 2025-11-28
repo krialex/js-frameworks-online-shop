@@ -7,6 +7,7 @@ import { ThemeToggle } from "./ThemeToggle";
 export function Header() {
     return (
         <header className={styles.wrapper}>
+            <div className={styles.container}>
             <Link to="/">
             <div className={styles.logo}>
                 <div className={styles.logoIcon}>
@@ -18,6 +19,7 @@ export function Header() {
 
             <Nav />
             <ThemeToggle />
+            </div>
         </header>
     )
 }

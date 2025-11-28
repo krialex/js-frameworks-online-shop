@@ -1,15 +1,18 @@
 .wrapper {
     width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 1.6rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     background-color: var(--header-bg-color);
     border-bottom: 1px solid #ccc; 
     color: var(--main-color);
   }
+
+.container {
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.6rem;
+}
 
 .wrapper a {
     text-decoration: none;

@@ -3,7 +3,8 @@
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 16px;
     margin: 20px auto;
-    max-width: 80%;
+    max-width: 950px;
+    padding: 10px;
 }
 
 .spinner {
