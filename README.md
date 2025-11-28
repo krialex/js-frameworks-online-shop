@@ -1,5 +1,7 @@
 # js-frameworks CA eCom store
 
+![Screenshot of the home page of the site](/src/assets/javaScriptFrameworks.png "The home page")
+
 ## Description
 
 This is a school assignment where I was tasked with creating an eCommerce store using **React**. I chose to also use **Vite**. The requirements included:
